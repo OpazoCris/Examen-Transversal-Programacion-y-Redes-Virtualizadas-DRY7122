@@ -1,3 +1,4 @@
+#ET C.opazo Fel.sobarzo
 from flask import Flask, request, render_template_string
 import sqlite3
 import hashlib
@@ -16,7 +17,7 @@ def crear_bd():
                 password_hash TEXT NOT NULL
             )
         """)
-        # Lista de usuarios y contraseñas
+    
         usuarios = {
             "Cristopher Opazo": "clave123",
             "Felipe Sobarzo": "clave321",
