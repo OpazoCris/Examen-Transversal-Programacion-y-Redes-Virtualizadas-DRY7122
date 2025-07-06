@@ -1,3 +1,4 @@
+#ET C.opazo Fel.sobarzo
 from geopy.distance import geodesic
 from geopy.geocoders import Nominatim
 
@@ -8,11 +9,10 @@ def calcular_tiempo(distancia_km, transporte):
         "caminando": 5,
         "vuelo": 800
     }
-    velocidad = velocidades.get(transporte, 80)  # Default auto
+    velocidad = velocidades.get(transporte, 80)
     horas = distancia_km / velocidad
     return horas
 
-# Función principal
 def main():
     print("=== Calculadora de distancia entre ciudades (Chile - Perú) ===")
     print("Escriba 's' en cualquier momento para salir.\n")
